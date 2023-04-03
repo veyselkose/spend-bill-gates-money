@@ -1,7 +1,9 @@
 import Head from "next/head";
-// import Image from "next/image";
 import { Inter } from "next/font/google";
-import Header from "@/components/Header";
+import Main from "./Main";
+import Side from "./Side";
+import GoBasketBtn from "@/components/GoBasketBtn";
+
 const inter = Inter({ subsets: ["latin"] });
 
 function App() {
@@ -31,10 +33,10 @@ function App() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
       <div className={`container ${inter.className}`}>
-        <Header />
-        <div className="grid grid-cols-6">
-          <main className="lg:col-span-4 col-span-6">main</main>
-          <aside className="lg:col-span-2 col-span-6">side</aside>
+        <GoBasketBtn />
+        <div className="grid grid-cols-6 gap-5 pb-6">
+          <Main />
+          <Side />
         </div>
       </div>
     </>
