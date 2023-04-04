@@ -1,5 +1,5 @@
 import { addToBasket, countToBasket, deleteToBasket } from "@/store/basketSlice";
-import { NumberFormat } from "@/utils";
+import { NumberFormat } from "@/lib";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 

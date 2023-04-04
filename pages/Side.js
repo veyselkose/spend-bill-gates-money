@@ -1,5 +1,5 @@
 import BasketItem from "@/components/BasketItem";
-import { NumberFormat } from "@/utils";
+import { NumberFormat } from "@/lib";
 import { useSelector } from "react-redux";
 
 function Side() {

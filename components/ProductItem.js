@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { addToBasket, countToBasket, deleteToBasket } from "@/store/basketSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { NumberFormat } from "@/utils";
+import { NumberFormat } from "@/lib";
 
 function ProductItem({ product }) {
   const productCount = useSelector((state) => state.basket.find((item) => item.id === product.id));
