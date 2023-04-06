@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import ProductItem from "@/components/ProductItem";
-import products from "./productsList";
+import products from "@/lib/productsList";
 
 function Main() {
   return (
